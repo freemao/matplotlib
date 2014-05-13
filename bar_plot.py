@@ -23,7 +23,7 @@ plt.ylabel('Number of variants')
 
 plt.xticks(index+width, ('C17', 'C18', 'CS173'))
 plt.legend(loc='best')
-plt.savefig('figure.png')
+plt.savefig('first.png')
 
 plt.figure(2)
 index = np.arange(n)
@@ -39,7 +39,20 @@ plt.ylabel('data_size(G)')
 
 plt.xticks(index+width, ('C17', 'C18', 'CS173'))
 plt.legend(loc='best')
-plt.savefig('figure2.pdf')
+plt.savefig('second.pdf')
+
+plt.figure(3)
+bar1 = plt.bar(index+0.15, L_variant, width=0.7, color='g',label='Leaf')
+bar2 = plt.bar(index+0.15, R_variant, width=0.7, color='r', bottom=L_variant,
+label='Root')
+plt.title('Variants result')
+plt.xlabel('species')
+plt.ylabel('Number of variants')
+
+plt.xticks(index+0.5, ('C17', 'C18', 'CS173'))
+plt.legend(loc='best')
+plt.savefig('third.png')
 
 plt.grid(True)
 #plt.show()
+

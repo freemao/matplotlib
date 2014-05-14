@@ -57,7 +57,7 @@ for fn in x.namelist:
 #print 'coverage: ' + str(total_cov)
 
     snp_cov = sum(snp_dep)/float(len(snp_dep))
-    print 'snp_total_dep: ' +str(sum(snp_dep))
+    print 'snp_total_dep: ' + str(sum(snp_dep))
     print 'snp_sites: ' + str(len(snp_qual))
     print 'snp_site_depth: ' + str(snp_cov)
 

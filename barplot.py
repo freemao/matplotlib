@@ -13,14 +13,14 @@ plt.figure(1)
 index = np.arange(n)
 width = 0.35
 bar1 = plt.bar(index+0.15, L_variant, width=0.35, color='g', label='Leaf')
-bar2 = plt.bar(index+0.15+width, R_variant,width=0.35, color='r', label='Root')
+bar2 = plt.bar(index+0.15+width, R_variant,
+               width=0.35, color='r', label='Root')
 plt.title('Variants result')
-plt.text(1,200000, 'this is text i added')
+plt.text(1,200000, 'this is text i added for test')
 plt.annotate('local max', xy=(2, 150000), xytext=(2, 180000),
              arrowprops=dict(facecolor='red', shrink=0.1))
 plt.xlabel('Species')
 plt.ylabel('Number of variants')
-
 plt.xticks(index+width, ('C17', 'C18', 'CS173'))
 plt.legend(loc='best')
 plt.savefig('first.png')
@@ -36,7 +36,6 @@ plt.annotate('annotation test', xy=(2, 5),
 plt.title('Data_size result')
 plt.xlabel('Species')
 plt.ylabel('data_size(G)')
-
 plt.xticks(index+width, ('C17', 'C18', 'CS173'))
 plt.legend(loc='best')
 plt.savefig('second.pdf')
@@ -48,11 +47,10 @@ label='Root')
 plt.title('Variants result')
 plt.xlabel('species')
 plt.ylabel('Number of variants')
-
 plt.xticks(index+0.5, ('C17', 'C18', 'CS173'))
 plt.legend(loc='best')
 plt.savefig('third.png')
 
 plt.grid(True)
-#plt.show()
+plt.show()
 

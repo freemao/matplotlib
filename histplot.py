@@ -1,6 +1,7 @@
 #!/usr/lib/python
 import matplotlib.pyplot as plt
 import freebayes_pipeline as fp
+import matplotlib.patches as patches
 
 x = fp.FreebayesPipe('.')
 x.getvcffilelist()
@@ -61,27 +62,43 @@ for fn in x.namelist:
     print 'snp_sites: ' + str(len(snp_qual))
     print 'snp_site_depth: ' + str(snp_cov)
 
+    fit = 0
+    total = 0
+    for x, y in zip(snp_dep, snp_qual):
+        total += 1
+        if x > 10 and y > 30 :
+            fit += 1
+    fitality = '%.2f'%(float(fit)/total)
+
     plt.figure(1)
-    plt.hist(snp_qual, 600, (1, 600))
-    plt.title('SNP quality')
+    plt.hist(snp_qual, 600, (1, 600), normed=1)
+    plt.title(fn.split('.')[0] + ' SNP quality')
     plt.xlabel('Quality')
     plt.ylabel('Probability')
     plt.grid()
     plt.savefig(fn.split('.')[0] + '.snp_qual.png')
 
     plt.figure(2)
-    plt.hist(snp_dep, 100, (1, 100))
-    plt.title('snp depth')
+    plt.hist(snp_dep, 60, (1, 60), normed=1)
+    plt.title(fn.split('.')[0] + ' snp depth')
     plt.xlabel('Depth')
     plt.ylabel('Probability')
     plt.savefig(fn.split('.')[0] + '.snp_dep.png')
     plt.grid()
 
-    plt.figure(3)
-    plt.plot(snp_dep, snp_qual, 'ro')
-    plt.title('Dep-Qual')
+    fig = plt.figure(3)
+    ax = fig.add_subplot(111)
+    plt.plot(snp_dep, snp_qual, '.')
+    plt.axis([0, 60, 0, 1000])
+    plt.title(fn.split('.')[0] + ' Dep-Qual')
+    rect = patches.Rectangle((10,30),width=590, height=970,
+                             color='green', alpha=0.5)
+    ax.add_patch(rect)
     plt.xlabel('Depth')
+    plt.text(40, 600, 'Total: ' + str(total)+'\n' + 'Filtered:' + \
+str(fit) + '\n' + fitality, fontsize=20, bbox=dict(facecolor='green') )
     plt.ylabel('Quality')
+
     plt.savefig(fn.split('.')[0] + '.dep-qual.png')
 
     plt.show()

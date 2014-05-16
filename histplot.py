@@ -76,4 +76,17 @@ for fn in x.namelist:
     plt.ylabel('Probability')
     plt.savefig(fn.split('.')[0] + '.snp_dep.png')
     plt.grid()
-#    plt.show()
+
+    plt.figure(3)
+    plt.plot(snp_dep, snp_qual, 'ro')
+    plt.title('Dep-Qual')
+    plt.xlabel('Depth')
+    plt.ylabel('Quality')
+    plt.savefig(fn.split('.')[0] + '.dep-qual.png')
+
+    plt.show()
+
+
+
+
+

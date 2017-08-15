@@ -22,7 +22,7 @@ From 0 (darker) to 1 (lighter)
 - (0.5, 0.5, 0.8) toward blue
 - (0.8, 0.5, 0.5) toward red
 
-## using an html hex string
+## using html hex string
 - '#1b9e77'
 - '#d95f02'
 - '#7570b3'

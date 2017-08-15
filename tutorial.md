@@ -23,4 +23,4 @@ From 0 (darker) to 1 (lighter)
 - (0.8, 0.5, 0.5) toward red
 
 ## colormaps
-![colormaps]()
+![colormaps](https://github.com/freemao/matplotlib/blob/master/colormaps.png)

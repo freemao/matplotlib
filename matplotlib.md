@@ -33,7 +33,7 @@ From 0 (darker) to 1 (lighter)
 append _r to use the reverse colormap. For exmaple:
 cmap = plt.get_cmap('GnBu_r')
 
-## recomended colors
+## recommended colors
 you can use this website to choose [recommended colors](http://colorbrewer2.org/#type=qualitative&scheme=Accent&n=6)
 ![recommendedcolors](https://github.com/freemao/matplotlib/blob/master/recommendcolors.PNG)
 

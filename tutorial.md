@@ -37,3 +37,7 @@ cmap = plt.get_cmap('GnBu_r')
 you can use this website to choose [recommended colors](http://colorbrewer2.org/#type=qualitative&scheme=Accent&n=6)
 ![recommendedcolors](https://github.com/freemao/matplotlib/blob/master/recommendcolors.PNG)
 
+
+Freemao
+cmiao@huskers.unl.edu
+8/15/17

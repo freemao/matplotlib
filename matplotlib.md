@@ -97,7 +97,7 @@ specify different colors and size for your dots
 # Coordinate setting
 `ax.set_xlim([0,1])`  
 `ax.set_xlim(left=0)`  #only specify left boundary  
-`ax.set_xlim(right=1)` #only specify left boundary  
+`ax.set_xlim(right=1)` #only specify rigt boundary  
 
 `ax.set_ylim([0,1])`  
 `ax.set_ylim(bottom=0)`  

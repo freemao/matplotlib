@@ -22,5 +22,18 @@ From 0 (darker) to 1 (lighter)
 - (0.5, 0.5, 0.8) toward blue
 - (0.8, 0.5, 0.5) toward red
 
+## using an html hex string
+- '#1b9e77'
+- '#d95f02'
+- '#7570b3'
+- '#e7298a'
+
 ## colormaps
 ![colormaps](https://github.com/freemao/matplotlib/blob/master/colormaps.png)
+append _r to use the reverse colormap. For exmaple:
+cmap = plt.get_cmap('GnBu_r')
+
+## recomended colors
+you can use this website to choose [recommended colors](http://colorbrewer2.org/#type=qualitative&scheme=Accent&n=6)
+![recommendedcolors](https://github.com/freemao/matplotlib/blob/master/recommendcolors.PNG)
+

@@ -115,9 +115,4 @@ specify different colors and size for your dots
 Learning
 <http://www.scipy-lectures.org/intro/matplotlib/matplotlib.html#tick-locators>
 
-
-
-
-Freemao  
-cmiao@huskers.unl.edu  
-8/15/17  
+# Continue...

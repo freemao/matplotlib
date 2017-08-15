@@ -73,6 +73,23 @@ Put expression in r'$...$'
 - fraction
 - fontstyle
 
+# Lines and markers
+- alpha = 0.7
+- antialiased = True
+- ls (linestyle)
+![line styles](https://github.com/freemao/matplotlib/blob/master/linestyles.png)
+- lw (linewidth)
+- marker
+![markers](https://github.com/freemao/matplotlib/blob/master/markers.png)
+- mew (markeredgewidth)
+- mec (markeredgecolor)
+- mfc (markerfacecolor)
+- ms (markersize)
+
+
+
+
+
 
 Freemao
 cmiao@huskers.unl.edu

@@ -111,6 +111,10 @@ specify different colors and size for your dots
 `ylabel[0] = ''`  
 `ax.set_yticklabels(ylabel)`  
 
+# Ticks
+Learning
+<http://www.scipy-lectures.org/intro/matplotlib/matplotlib.html#tick-locators>
+
 
 
 

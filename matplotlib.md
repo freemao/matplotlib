@@ -94,25 +94,26 @@ specify different colors and size for your dots
 ![scatter_examplt](https://github.com/freemao/matplotlib/blob/master/scatter.png)
 
 # Coordinate setting
-`ax.set_xlim([0,1])`
-`ax.set_xlim(left=0)`  #only specify left boundary
-`ax.set_xlim(right=1)` #only specify left boundary
+`ax.set_xlim([0,1])`  
+`ax.set_xlim(left=0)`  #only specify left boundary  
+`ax.set_xlim(right=1)` #only specify left boundary  
 
-`ax.set_ylim([0,1])`
-`ax.set_ylim(bottom=0)`
-`ax.set_ylim(top=1)`
+`ax.set_ylim([0,1])`  
+`ax.set_ylim(bottom=0)`  
+`ax.set_ylim(top=1)`  
 
-`ax.set_xticks()`
-`ax.set_xticks([])` #give an empty list to show without ticks
-`ax.set_xticklabels()`
+`ax.set_xticks()`  
+`ax.set_xticks([])` #give an empty list to show without ticks  
+`ax.set_xticklabels()`  
 
-`ax.set_yticks()` 
-`ylabel = ['%.2f'%i for i in np.arange(0,0.61, 0.1)]`
-`ylabel[0] = ''`
-`ax.set_yticklabels(ylabel)`
+`ax.set_yticks()`  
+`ylabel = ['%.2f'%i for i in np.arange(0,0.61, 0.1)]`  
+`ylabel[0] = ''`  
+`ax.set_yticklabels(ylabel)`  
 
 
 
-Freemao
-cmiao@huskers.unl.edu
-8/15/17
+
+Freemao  
+cmiao@huskers.unl.edu  
+8/15/17  

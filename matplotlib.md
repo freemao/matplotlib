@@ -128,12 +128,19 @@ Place the [0,0] index of the array in the upper left or lower left corner of the
 
 ## Example:
 `boundaries = MaxNLocator(nbins='auto').tick_values(X.min(), X.max())` #find the best locators base on your array 
-- nbins. maximum number of internals.  
+- nbins. 
+maximum number of internals.  
+
 `mycmap = plt.get_cmap('GnBu')`  
+
 `mynorm = BoundaryNorm(boundaries, ncolors=mycmap.N, clip=True)` # Generate a colormap index based on discrete intervals  
-- boundaries. array like  
-- ncolors, number of colors in the colormap  
-- clip. if True, out of range values are mapped to 0 if they are below boundaries[0] or mapped to ncolors - 1 if they are above boundaries[-1].  
+- boundaries. 
+array like  
+- ncolors 
+number of colors in the colormap  
+- clip. 
+if True, out of range values are mapped to 0 if they are below boundaries[0] or mapped to ncolors - 1 if they are above boundaries[-1].  
+
 `myheat = ax.imshow(X, cmap=mycmap, norm=mynorm)`  
 `fig.colorbar(myheat)` # set the color bar 
 

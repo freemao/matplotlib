@@ -123,7 +123,7 @@ array like, shape N*M
 colormap
 - norm  
 normalize colors.
-- origin = 'lower' or 'upper'
+- origin = 'lower' or 'upper'  
 Place the [0,0] index of the array in the upper left or lower left corner of the axes. If None, default to rc image.origin.
 
 ## Example:

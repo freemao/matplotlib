@@ -117,12 +117,16 @@ Learning
 
 # imshow
 imshow(X, cmap=None, norm=None, aspect=None, interpolation=None, alpha=None, vmin=None, vmax=None, origin=None, extent=None, shape=None, filternorm=1, filterrad=4.0, imlim=None, resample=None, url=None, hold=None, data=None, **kwargs)
-- X
+- X  
 array like, shape N*M
-- cmap
+- cmap  
 colormap
-- norm
+- norm  
 
+`levels = [MaxNLocator](https://matplotlib.org/api/ticker_api.html#matplotlib.ticker.MaxNLocator)(nbins='auto').tick_values(X.min(), X.max())` #find the best locators base on your array 
+`cmap = plt.get_cmap('GnBu')`
+`mynorm = BoundaryNorm(levels, ncolors=cmap.N, clip=True)` #
+`myheat = ax.imshow(X, cmap=cmap, norm=norm)`
 
 
 

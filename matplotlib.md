@@ -115,4 +115,17 @@ specify different colors and size for your dots
 Learning
 <http://www.scipy-lectures.org/intro/matplotlib/matplotlib.html#tick-locators>
 
-# Continue...
+# imshow
+imshow(X, cmap=None, norm=None, aspect=None, interpolation=None, alpha=None, vmin=None, vmax=None, origin=None, extent=None, shape=None, filternorm=1, filterrad=4.0, imlim=None, resample=None, url=None, hold=None, data=None, **kwargs)
+- X
+array like, shape N*M
+- cmap
+colormap
+- norm
+
+
+
+
+
+
+

@@ -87,11 +87,11 @@ Put expression in r'$...$'
 - ms (markersize)
 
 # scatter
-specify different colors and size for your dots
-`colors = np.random.rand(N)`
-`area = np.pi * (15 * np.random.rand(N))**2` # 0 to 15 point radii
-`plt.scatter(x, y, s=area, c=colors, alpha=0.5)`
-![scatter_examplt](https://github.com/freemao/matplotlib/blob/master/scatter.png)
+specify different colors and size for your dots  
+`colors = np.random.rand(N)`  
+`area = np.pi * (15 * np.random.rand(N))**2` # 0 to 15 point radii  
+`plt.scatter(x, y, s=area, c=colors, alpha=0.5)`  
+![scatter_examplt](https://github.com/freemao/matplotlib/blob/master/scatter.png)  
 
 # Coordinate setting
 `ax.set_xlim([0,1])`  

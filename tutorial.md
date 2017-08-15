@@ -1,5 +1,5 @@
 # Colors
-##input colors name directly
+## input colors name directly
 - blue
 - green
 - red
@@ -9,7 +9,7 @@
 - back
 - white
 
-##gray 
+## gray 
 - '0.95' 
 - '0.75'
 - '0.55' 

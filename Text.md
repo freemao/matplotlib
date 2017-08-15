@@ -24,7 +24,8 @@ put a rectangular box around the text.
 - xytext: coordinate for text
 - arrowprops: define arrow between text pos and annotation pos.
 
-## [mathematical expression](http://matplotlib.org/users/mathtext.html) using Tex markup
+## mathematical expression using Tex markup
+<(http://matplotlib.org/users/mathtext.html)>
 put expression in r'$...$'
 - \lambda, \pi, \rho, \sigma, \theta, \Delta, \Pi, \sum, \lg, \ln, \log
 - subscripts(^) and superscripts(_)

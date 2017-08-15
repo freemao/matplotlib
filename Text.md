@@ -1,4 +1,5 @@
 # Text
+<https://matplotlib.org/users/index_text.html>
 ## text(x, y, s, fontdict=None, withdash=False, **kwargs)
 - x, y: the coordinate of your text
 - s: content of your text
@@ -19,6 +20,7 @@ put a rectangular box around the text.
 - loc =  {‘center’, ‘left’, ‘right’}. default to 'center'
 
 ## annotate(s, xy=(x,y), xytext=(x,y), arrowprops=dict(arrowsytyle='->'))
+<https://matplotlib.org/users/annotations.html>
 - text s
 - xy: coordinate for annotation
 - xytext: coordinate for text

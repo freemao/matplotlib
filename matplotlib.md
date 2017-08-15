@@ -76,7 +76,7 @@ Put expression in r'$...$'
 # Lines and markers
 - alpha = 0.7
 - antialiased = True
-- ls (linestyle)
+- ls (linestyle)  
 ':', '-.', '--', '-'
 ![line styles](https://github.com/freemao/matplotlib/blob/master/linestyles.png)
 - lw (linewidth)

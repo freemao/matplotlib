@@ -6,7 +6,7 @@
 - cyan
 - magenta
 - yellow
-- back
+- black
 - white
 
 ## gray 
